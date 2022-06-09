@@ -14,7 +14,7 @@ const DockComponent = () => {
   const fetchData = async () => {
     setIsLoading(true);
     await axios
-      .get("http://localhost:8080/dataset")
+      .get("https://seal-app-y4e29.ondigitalocean.app/dataset")
       .catch((err) => console.error(err))
       .then((response) => setData(response.data.dataset));
     setIsLoading(false);

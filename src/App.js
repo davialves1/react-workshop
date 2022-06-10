@@ -6,10 +6,12 @@ import Home from "./Home";
 import Chart from "./Chart";
 
 function App() {
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/:tabCount" element={<Home />} />
         <Route path="/dock" element={<DockComponent />} />
         <Route path="/chart" element={<Chart />} />
       </Routes>

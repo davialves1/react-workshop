@@ -45,11 +45,11 @@ const DockComponent = ({ tabCount }) => {
     },
     {
       id: "tab2",
-      title: "Large Data Set (+3000 Rows)",
+      title: "Large Data Set (5 Rows)",
       content: isLoading ? (
         <p>Loading...</p>
       ) : (
-        <AgGridTableComponent id={2} pagination={false} pageSize={false} />
+        <AgGridTableComponent id={2} pagination={true} pageSize={false} />
       ),
       closable: true,
     },
